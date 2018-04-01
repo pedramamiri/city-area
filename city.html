@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>city-speech</title>
+        <meta charset="UTF-8">
+        <style>
+            body {
+             margin: 0;
+             width: 100%;
+             }
+            .fullscreen-container {
+             background: snow;
+             height: 100%;
+             width: 100%;
+             margin: auto;
+             display: flex;
+             flex-wrap: wrap;
+             align-items: center;
+             justify-content: space-evenly;
+            }
+            .circular-button {
+             opacity: 0.7;
+             width: 600px;
+             height: 300px;
+             margin: auto;
+             border-radius: 10px;
+             background-size: cover;
+             background-repeat: no-repeat;
+             box-shadow: 0px 5px 10px #a0a0a0
+            }
+            .circular-button:hover {
+             opacity: 1;
+            }
+             </style>
+    </head>    
+    <body>
+        <audio></audio>
+
+        <!-- Load Babel -->
+        <script src="./babel.js"></script>
+        
+        <!-- Your custom script here -->
+        <script type="text/babel" src="./soundManager.js"></script>
+        <script type="text/babel" src="./dcity.js"></script>
+        <script type="text/babel" src="./script.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.1/js/materialize.min.js"></script>
+    </body>
+</html>
